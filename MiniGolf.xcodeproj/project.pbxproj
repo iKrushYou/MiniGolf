@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028D167790610CD284945488 /* Pods_MiniGolfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF08955FF03317730FACB548 /* Pods_MiniGolfTests.framework */; };
+		6B82DCC02D55B928BEA59A82 /* Pods_MiniGolf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97352F2D33C8DF58D3F9E4D8 /* Pods_MiniGolf.framework */; };
+		E68CB96C07E1BC409674E163 /* Pods_MiniGolfUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71A2507D798E50C245B52E /* Pods_MiniGolfUITests.framework */; };
+		FA7ECB391EE2790000D5A20E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ECB381EE2790000D5A20E /* Player.swift */; };
+		FA7ECB3B1EE27B2500D5A20E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ECB3A1EE27B2500D5A20E /* GameViewController.swift */; };
+		FA7ECB3D1EE27F7300D5A20E /* PlayerCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7ECB3C1EE27F7300D5A20E /* PlayerCardView.xib */; };
+		FA7ECB411EE27FF400D5A20E /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ECB401EE27FF400D5A20E /* PlayerCardView.swift */; };
+		FA7ECB431EE2816400D5A20E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ECB421EE2816400D5A20E /* CollectionViewController.swift */; };
+		FAC869E11EE26BFE0052C99C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC869E01EE26BFE0052C99C /* AppDelegate.swift */; };
+		FAC869E31EE26BFE0052C99C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC869E21EE26BFE0052C99C /* ViewController.swift */; };
+		FAC869E61EE26BFE0052C99C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC869E41EE26BFE0052C99C /* Main.storyboard */; };
+		FAC869E81EE26BFE0052C99C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC869E71EE26BFE0052C99C /* Assets.xcassets */; };
+		FAC869EB1EE26BFE0052C99C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC869E91EE26BFE0052C99C /* LaunchScreen.storyboard */; };
+		FAC869F61EE26BFE0052C99C /* MiniGolfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC869F51EE26BFE0052C99C /* MiniGolfTests.swift */; };
+		FAC86A011EE26BFE0052C99C /* MiniGolfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC86A001EE26BFE0052C99C /* MiniGolfUITests.swift */; };
+		FAC86A0F1EE26C1A0052C99C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAC86A0E1EE26C1A0052C99C /* GoogleService-Info.plist */; };
+		FAC86A111EE270040052C99C /* AddPlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC86A101EE270040052C99C /* AddPlayersTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC869F21EE26BFE0052C99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC869D51EE26BFE0052C99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC869DC1EE26BFE0052C99C;
+			remoteInfo = MiniGolf;
+		};
+		FAC869FD1EE26BFE0052C99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC869D51EE26BFE0052C99C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC869DC1EE26BFE0052C99C;
+			remoteInfo = MiniGolf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7074FB37C5FA290186D8E152 /* Pods-MiniGolf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolf.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.release.xcconfig"; sourceTree = "<group>"; };
+		93E3B81A72218FD8FBA0449C /* Pods-MiniGolfUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolfUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolfUITests/Pods-MiniGolfUITests.release.xcconfig"; sourceTree = "<group>"; };
+		97352F2D33C8DF58D3F9E4D8 /* Pods_MiniGolf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniGolf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75D45DEF0899189CDD985CD /* Pods-MiniGolfUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolfUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolfUITests/Pods-MiniGolfUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF08955FF03317730FACB548 /* Pods_MiniGolfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniGolfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78025F1E35B3E6E5C1699C4 /* Pods-MiniGolfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolfTests/Pods-MiniGolfTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB00F5B91FAC8EBF949CB43D /* Pods-MiniGolfTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolfTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolfTests/Pods-MiniGolfTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC71A2507D798E50C245B52E /* Pods_MiniGolfUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniGolfUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D363FE87C125647518921F89 /* Pods-MiniGolf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7ECB381EE2790000D5A20E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FA7ECB3A1EE27B2500D5A20E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FA7ECB3C1EE27F7300D5A20E /* PlayerCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerCardView.xib; sourceTree = "<group>"; };
+		FA7ECB401EE27FF400D5A20E /* PlayerCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
+		FA7ECB421EE2816400D5A20E /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FAC869DD1EE26BFE0052C99C /* MiniGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC869E01EE26BFE0052C99C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC869E21EE26BFE0052C99C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAC869E51EE26BFE0052C99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAC869E71EE26BFE0052C99C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC869EA1EE26BFE0052C99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC869EC1EE26BFE0052C99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC869F11EE26BFE0052C99C /* MiniGolfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniGolfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC869F51EE26BFE0052C99C /* MiniGolfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGolfTests.swift; sourceTree = "<group>"; };
+		FAC869F71EE26BFE0052C99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC869FC1EE26BFE0052C99C /* MiniGolfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniGolfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC86A001EE26BFE0052C99C /* MiniGolfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGolfUITests.swift; sourceTree = "<group>"; };
+		FAC86A021EE26BFE0052C99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC86A0E1EE26C1A0052C99C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAC86A101EE270040052C99C /* AddPlayersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayersTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC869DA1EE26BFE0052C99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B82DCC02D55B928BEA59A82 /* Pods_MiniGolf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC869EE1EE26BFE0052C99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028D167790610CD284945488 /* Pods_MiniGolfTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC869F91EE26BFE0052C99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68CB96C07E1BC409674E163 /* Pods_MiniGolfUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		972A8461B250762933DEA4E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97352F2D33C8DF58D3F9E4D8 /* Pods_MiniGolf.framework */,
+				AF08955FF03317730FACB548 /* Pods_MiniGolfTests.framework */,
+				BC71A2507D798E50C245B52E /* Pods_MiniGolfUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE9A6BE2B155FDF290B2E0DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D363FE87C125647518921F89 /* Pods-MiniGolf.debug.xcconfig */,
+				7074FB37C5FA290186D8E152 /* Pods-MiniGolf.release.xcconfig */,
+				BB00F5B91FAC8EBF949CB43D /* Pods-MiniGolfTests.debug.xcconfig */,
+				B78025F1E35B3E6E5C1699C4 /* Pods-MiniGolfTests.release.xcconfig */,
+				A75D45DEF0899189CDD985CD /* Pods-MiniGolfUITests.debug.xcconfig */,
+				93E3B81A72218FD8FBA0449C /* Pods-MiniGolfUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAC869D41EE26BFE0052C99C = {
+			isa = PBXGroup;
+			children = (
+				FAC869DF1EE26BFE0052C99C /* MiniGolf */,
+				FAC869F41EE26BFE0052C99C /* MiniGolfTests */,
+				FAC869FF1EE26BFE0052C99C /* MiniGolfUITests */,
+				FAC869DE1EE26BFE0052C99C /* Products */,
+				BE9A6BE2B155FDF290B2E0DC /* Pods */,
+				972A8461B250762933DEA4E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC869DE1EE26BFE0052C99C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC869DD1EE26BFE0052C99C /* MiniGolf.app */,
+				FAC869F11EE26BFE0052C99C /* MiniGolfTests.xctest */,
+				FAC869FC1EE26BFE0052C99C /* MiniGolfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC869DF1EE26BFE0052C99C /* MiniGolf */ = {
+			isa = PBXGroup;
+			children = (
+				FAC869E01EE26BFE0052C99C /* AppDelegate.swift */,
+				FAC869E21EE26BFE0052C99C /* ViewController.swift */,
+				FAC869E41EE26BFE0052C99C /* Main.storyboard */,
+				FA7ECB3C1EE27F7300D5A20E /* PlayerCardView.xib */,
+				FA7ECB401EE27FF400D5A20E /* PlayerCardView.swift */,
+				FA7ECB381EE2790000D5A20E /* Player.swift */,
+				FAC86A101EE270040052C99C /* AddPlayersTableViewController.swift */,
+				FA7ECB421EE2816400D5A20E /* CollectionViewController.swift */,
+				FA7ECB3A1EE27B2500D5A20E /* GameViewController.swift */,
+				FAC869E71EE26BFE0052C99C /* Assets.xcassets */,
+				FAC869E91EE26BFE0052C99C /* LaunchScreen.storyboard */,
+				FAC869EC1EE26BFE0052C99C /* Info.plist */,
+				FAC86A0E1EE26C1A0052C99C /* GoogleService-Info.plist */,
+			);
+			path = MiniGolf;
+			sourceTree = "<group>";
+		};
+		FAC869F41EE26BFE0052C99C /* MiniGolfTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC869F51EE26BFE0052C99C /* MiniGolfTests.swift */,
+				FAC869F71EE26BFE0052C99C /* Info.plist */,
+			);
+			path = MiniGolfTests;
+			sourceTree = "<group>";
+		};
+		FAC869FF1EE26BFE0052C99C /* MiniGolfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC86A001EE26BFE0052C99C /* MiniGolfUITests.swift */,
+				FAC86A021EE26BFE0052C99C /* Info.plist */,
+			);
+			path = MiniGolfUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC869DC1EE26BFE0052C99C /* MiniGolf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC86A051EE26BFE0052C99C /* Build configuration list for PBXNativeTarget "MiniGolf" */;
+			buildPhases = (
+				8CB3594E4774BFFCBBEF4A83 /* [CP] Check Pods Manifest.lock */,
+				FAC869D91EE26BFE0052C99C /* Sources */,
+				FAC869DA1EE26BFE0052C99C /* Frameworks */,
+				FAC869DB1EE26BFE0052C99C /* Resources */,
+				C627C6FA30ABB80FD1F76B61 /* [CP] Embed Pods Frameworks */,
+				7ACE6A9264D26A4A8C41CB1E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniGolf;
+			productName = MiniGolf;
+			productReference = FAC869DD1EE26BFE0052C99C /* MiniGolf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC869F01EE26BFE0052C99C /* MiniGolfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC86A081EE26BFE0052C99C /* Build configuration list for PBXNativeTarget "MiniGolfTests" */;
+			buildPhases = (
+				88AD78183BC428A730ECA6E8 /* [CP] Check Pods Manifest.lock */,
+				FAC869ED1EE26BFE0052C99C /* Sources */,
+				FAC869EE1EE26BFE0052C99C /* Frameworks */,
+				FAC869EF1EE26BFE0052C99C /* Resources */,
+				CD6D0A7395B24513F4C11C01 /* [CP] Embed Pods Frameworks */,
+				AA94ED440D9D29AE07EBFCD9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC869F31EE26BFE0052C99C /* PBXTargetDependency */,
+			);
+			name = MiniGolfTests;
+			productName = MiniGolfTests;
+			productReference = FAC869F11EE26BFE0052C99C /* MiniGolfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC869FB1EE26BFE0052C99C /* MiniGolfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC86A0B1EE26BFE0052C99C /* Build configuration list for PBXNativeTarget "MiniGolfUITests" */;
+			buildPhases = (
+				C9AB239FEFF064BAF98322F8 /* [CP] Check Pods Manifest.lock */,
+				FAC869F81EE26BFE0052C99C /* Sources */,
+				FAC869F91EE26BFE0052C99C /* Frameworks */,
+				FAC869FA1EE26BFE0052C99C /* Resources */,
+				23440E185706E9A10E4D0CED /* [CP] Embed Pods Frameworks */,
+				D2747A2AD3A2DB2B9E52732B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC869FE1EE26BFE0052C99C /* PBXTargetDependency */,
+			);
+			name = MiniGolfUITests;
+			productName = MiniGolfUITests;
+			productReference = FAC869FC1EE26BFE0052C99C /* MiniGolfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC869D51EE26BFE0052C99C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alex Krush";
+				TargetAttributes = {
+					FAC869DC1EE26BFE0052C99C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5KNY9RDSC4;
+						ProvisioningStyle = Automatic;
+					};
+					FAC869F01EE26BFE0052C99C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5KNY9RDSC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC869DC1EE26BFE0052C99C;
+					};
+					FAC869FB1EE26BFE0052C99C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5KNY9RDSC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC869DC1EE26BFE0052C99C;
+					};
+				};
+			};
+			buildConfigurationList = FAC869D81EE26BFE0052C99C /* Build configuration list for PBXProject "MiniGolf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC869D41EE26BFE0052C99C;
+			productRefGroup = FAC869DE1EE26BFE0052C99C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC869DC1EE26BFE0052C99C /* MiniGolf */,
+				FAC869F01EE26BFE0052C99C /* MiniGolfTests */,
+				FAC869FB1EE26BFE0052C99C /* MiniGolfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC869DB1EE26BFE0052C99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC869EB1EE26BFE0052C99C /* LaunchScreen.storyboard in Resources */,
+				FA7ECB3D1EE27F7300D5A20E /* PlayerCardView.xib in Resources */,
+				FAC86A0F1EE26C1A0052C99C /* GoogleService-Info.plist in Resources */,
+				FAC869E81EE26BFE0052C99C /* Assets.xcassets in Resources */,
+				FAC869E61EE26BFE0052C99C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC869EF1EE26BFE0052C99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC869FA1EE26BFE0052C99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23440E185706E9A10E4D0CED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolfUITests/Pods-MiniGolfUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ACE6A9264D26A4A8C41CB1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88AD78183BC428A730ECA6E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB3594E4774BFFCBBEF4A83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA94ED440D9D29AE07EBFCD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolfTests/Pods-MiniGolfTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C627C6FA30ABB80FD1F76B61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AB239FEFF064BAF98322F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6D0A7395B24513F4C11C01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolfTests/Pods-MiniGolfTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2747A2AD3A2DB2B9E52732B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolfUITests/Pods-MiniGolfUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC869D91EE26BFE0052C99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7ECB3B1EE27B2500D5A20E /* GameViewController.swift in Sources */,
+				FA7ECB391EE2790000D5A20E /* Player.swift in Sources */,
+				FAC869E31EE26BFE0052C99C /* ViewController.swift in Sources */,
+				FA7ECB411EE27FF400D5A20E /* PlayerCardView.swift in Sources */,
+				FA7ECB431EE2816400D5A20E /* CollectionViewController.swift in Sources */,
+				FAC869E11EE26BFE0052C99C /* AppDelegate.swift in Sources */,
+				FAC86A111EE270040052C99C /* AddPlayersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC869ED1EE26BFE0052C99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC869F61EE26BFE0052C99C /* MiniGolfTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC869F81EE26BFE0052C99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC86A011EE26BFE0052C99C /* MiniGolfUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC869F31EE26BFE0052C99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC869DC1EE26BFE0052C99C /* MiniGolf */;
+			targetProxy = FAC869F21EE26BFE0052C99C /* PBXContainerItemProxy */;
+		};
+		FAC869FE1EE26BFE0052C99C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC869DC1EE26BFE0052C99C /* MiniGolf */;
+			targetProxy = FAC869FD1EE26BFE0052C99C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC869E41EE26BFE0052C99C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC869E51EE26BFE0052C99C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAC869E91EE26BFE0052C99C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC869EA1EE26BFE0052C99C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC86A031EE26BFE0052C99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC86A041EE26BFE0052C99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC86A061EE26BFE0052C99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D363FE87C125647518921F89 /* Pods-MiniGolf.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KNY9RDSC4;
+				INFOPLIST_FILE = MiniGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAC86A071EE26BFE0052C99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7074FB37C5FA290186D8E152 /* Pods-MiniGolf.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KNY9RDSC4;
+				INFOPLIST_FILE = MiniGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FAC86A091EE26BFE0052C99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB00F5B91FAC8EBF949CB43D /* Pods-MiniGolfTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5KNY9RDSC4;
+				INFOPLIST_FILE = MiniGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf";
+			};
+			name = Debug;
+		};
+		FAC86A0A1EE26BFE0052C99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78025F1E35B3E6E5C1699C4 /* Pods-MiniGolfTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5KNY9RDSC4;
+				INFOPLIST_FILE = MiniGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf";
+			};
+			name = Release;
+		};
+		FAC86A0C1EE26BFE0052C99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75D45DEF0899189CDD985CD /* Pods-MiniGolfUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5KNY9RDSC4;
+				INFOPLIST_FILE = MiniGolfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiniGolf;
+			};
+			name = Debug;
+		};
+		FAC86A0D1EE26BFE0052C99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E3B81A72218FD8FBA0449C /* Pods-MiniGolfUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5KNY9RDSC4;
+				INFOPLIST_FILE = MiniGolfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiniGolf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC869D81EE26BFE0052C99C /* Build configuration list for PBXProject "MiniGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC86A031EE26BFE0052C99C /* Debug */,
+				FAC86A041EE26BFE0052C99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC86A051EE26BFE0052C99C /* Build configuration list for PBXNativeTarget "MiniGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC86A061EE26BFE0052C99C /* Debug */,
+				FAC86A071EE26BFE0052C99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC86A081EE26BFE0052C99C /* Build configuration list for PBXNativeTarget "MiniGolfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC86A091EE26BFE0052C99C /* Debug */,
+				FAC86A0A1EE26BFE0052C99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC86A0B1EE26BFE0052C99C /* Build configuration list for PBXNativeTarget "MiniGolfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC86A0C1EE26BFE0052C99C /* Debug */,
+				FAC86A0D1EE26BFE0052C99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC869D51EE26BFE0052C99C /* Project object */;
+}

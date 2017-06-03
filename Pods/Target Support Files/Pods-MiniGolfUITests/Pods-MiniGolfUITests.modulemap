@@ -1,0 +1,6 @@
+framework module Pods_MiniGolfUITests {
+  umbrella header "Pods-MiniGolfUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
