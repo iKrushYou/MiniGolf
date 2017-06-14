@@ -8,6 +8,7 @@ target 'MiniGolf' do
   # Pods for MiniGolf
   
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   target 'MiniGolfTests' do
     inherit! :search_paths

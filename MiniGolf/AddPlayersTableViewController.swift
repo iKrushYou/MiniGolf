@@ -97,5 +97,11 @@ class AddPlayersTableViewController: UIViewController, UITableViewDataSource, UI
             vc.players = self.players
         }
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        resignFirstResponder()
+//        setEditing(false, animated: true)
+        self.view.endEditing(true)
+    }
 
 }

@@ -15,6 +15,8 @@
 		FA7ECB3D1EE27F7300D5A20E /* PlayerCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7ECB3C1EE27F7300D5A20E /* PlayerCardView.xib */; };
 		FA7ECB411EE27FF400D5A20E /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ECB401EE27FF400D5A20E /* PlayerCardView.swift */; };
 		FA7ECB431EE2816400D5A20E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ECB421EE2816400D5A20E /* CollectionViewController.swift */; };
+		FA937A971EE3D6A800E3F087 /* MiniGolfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA937A961EE3D6A800E3F087 /* MiniGolfGame.swift */; };
+		FA937A991EE3D7FC00E3F087 /* MiniGolfHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA937A981EE3D7FC00E3F087 /* MiniGolfHole.swift */; };
 		FAC869E11EE26BFE0052C99C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC869E01EE26BFE0052C99C /* AppDelegate.swift */; };
 		FAC869E31EE26BFE0052C99C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC869E21EE26BFE0052C99C /* ViewController.swift */; };
 		FAC869E61EE26BFE0052C99C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC869E41EE26BFE0052C99C /* Main.storyboard */; };
@@ -58,6 +60,8 @@
 		FA7ECB3C1EE27F7300D5A20E /* PlayerCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerCardView.xib; sourceTree = "<group>"; };
 		FA7ECB401EE27FF400D5A20E /* PlayerCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
 		FA7ECB421EE2816400D5A20E /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FA937A961EE3D6A800E3F087 /* MiniGolfGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGolfGame.swift; sourceTree = "<group>"; };
+		FA937A981EE3D7FC00E3F087 /* MiniGolfHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniGolfHole.swift; sourceTree = "<group>"; };
 		FAC869DD1EE26BFE0052C99C /* MiniGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC869E01EE26BFE0052C99C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC869E21EE26BFE0052C99C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				FAC869E91EE26BFE0052C99C /* LaunchScreen.storyboard */,
 				FAC869EC1EE26BFE0052C99C /* Info.plist */,
 				FAC86A0E1EE26C1A0052C99C /* GoogleService-Info.plist */,
+				FA937A961EE3D6A800E3F087 /* MiniGolfGame.swift */,
+				FA937A981EE3D7FC00E3F087 /* MiniGolfHole.swift */,
 			);
 			path = MiniGolf;
 			sourceTree = "<group>";
@@ -476,6 +482,8 @@
 				FA7ECB391EE2790000D5A20E /* Player.swift in Sources */,
 				FAC869E31EE26BFE0052C99C /* ViewController.swift in Sources */,
 				FA7ECB411EE27FF400D5A20E /* PlayerCardView.swift in Sources */,
+				FA937A991EE3D7FC00E3F087 /* MiniGolfHole.swift in Sources */,
+				FA937A971EE3D6A800E3F087 /* MiniGolfGame.swift in Sources */,
 				FA7ECB431EE2816400D5A20E /* CollectionViewController.swift in Sources */,
 				FAC869E11EE26BFE0052C99C /* AppDelegate.swift in Sources */,
 				FAC86A111EE270040052C99C /* AddPlayersTableViewController.swift in Sources */,
@@ -633,6 +641,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5KNY9RDSC4;
 				INFOPLIST_FILE = MiniGolf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,6 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5KNY9RDSC4;
 				INFOPLIST_FILE = MiniGolf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iKrushYou.MiniGolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";

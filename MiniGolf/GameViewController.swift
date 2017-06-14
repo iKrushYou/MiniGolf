@@ -10,13 +10,18 @@ import UIKit
 
 class GameViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var holeLabel: UILabel!
+    
     public var players = [Player]()
+    var miniGolfGame : MiniGolfGame
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         print(players)
+        miniGolfGame = MiniGolfGame(title: "Game", players: players)
+        updateView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,17 +42,45 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
-        let cardView = PlayerCardView(frame: CGRect(x: 0, y: 0, width: cell.frame.size.width, height: cell.frame.size.height))
+        let playerView = cell.viewWithTag(10) as! PlayerCardView
         
-        print(cell.frame.size)
+        playerView.player = players[indexPath.row]
+        
         
 //        cardView.nameLabel.text = players[indexPath.row].name
         
-        cell.addSubview(cardView)
+//        cell.addSubview(cardView)
         
         // Configure the cell
         
         return cell
     }
 
+    @IBOutlet weak var backButton: UIButton!
+    @IBAction func backRoundAction(_ sender: Any) {
+        miniGolfGame.prevHole()
+        
+        if (miniGolfGame.currentHole == 1) {
+            backButton.isEnabled = false
+        }
+        
+        collectionView.reloadData()
+        updateView()
+    }
+    
+    @IBOutlet weak var nextButton: UIButton!
+    @IBAction func nextRoundAction(_ sender: Any) {
+        miniGolfGame.nextHole()
+        
+        if (miniGolfGame.currentHole == 1) {
+            backButton.isEnabled = false
+        }
+        
+        collectionView.reloadData()
+        updateView()
+    }
+    
+    func updateView() {
+        holeLabel.text = "Hole " + String(miniGolfGame.currentHole)
+    }
 }
